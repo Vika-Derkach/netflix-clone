@@ -14,9 +14,9 @@ export default function Jumbotron({
   ...restProps
 }) {
   return (
-    <Item direction={direction}>
+    <Item {...restProps}>
       {" "}
-      <Inner> {children}</Inner>{" "}
+      <Inner direction={direction}> {children}</Inner>{" "}
     </Item>
   );
 }
