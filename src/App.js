@@ -1,4 +1,5 @@
 import React from "react";
+import { FaqsContainer } from "./containers/faqs";
 import { FooterContainer } from "./containers/footer";
 import { JumbotronContainer } from "./containers/jumbotron";
 export default function App() {
@@ -6,6 +7,7 @@ export default function App() {
     <>
       {" "}
       <JumbotronContainer />
+      <FaqsContainer />
       <FooterContainer />{" "}
     </>
   );
