@@ -1,6 +1,8 @@
 import Firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
+// 1) when seeding the database you'll have to uncomment this!
+// import { seedDatabase } from "../seed";
 
 const config = {
   // apiKey: '',
@@ -29,4 +31,5 @@ const firebase = Firebase.initializeApp(config);
 //seedDatabase(firebase);
 // 3) once you have populated the database (only run once!), re-comment this so you don't get duplicate data
 
+// seedDatabase(firebase);
 export { firebase };
