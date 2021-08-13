@@ -55,7 +55,7 @@ Card.Meta = function CardMeta({ children, ...restProps }) {
 };
 
 Card.Feature = function CardFeature({ children, category, ...restProps }) {
-  const { showFeature, setShowFeature, itemFeature, setItemFeature } =
+  const { showFeature, setShowFeature, itemFeature } =
     useContext(FeatureContext);
 
   return showFeature ? (
