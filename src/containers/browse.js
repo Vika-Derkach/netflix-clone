@@ -84,7 +84,7 @@ export function BrowseContainer({ slides }) {
         {slideRows.map((slideItem) => (
           <Card key={`${category}-${slideItem.title.toLowerCase()}`}>
             <Card.Title>{slideItem.title}</Card.Title>
-             <Card.Entities>
+            <Card.Entities>
               {slideItem.data.map((item) => (
                 <Card.Item key={item.docId} item={item}>
                   <Card.Image
@@ -96,14 +96,15 @@ export function BrowseContainer({ slides }) {
                   </Card.Meta>
                 </Card.Item>
               ))}
-            </Card.Entities> 
-           
-            {/* <Card.Feature category={category}>
-              <Player>
+            </Card.Entities>
+
+            <Card.Feature category={category}>
+              {/* <Player>
                 <Player.Button />
                 <Player.Video src="/videos/bunny.mp4" />
-              </Player>
-            </Card.Feature>  */}
+              </Player> */}
+              <p>Hello</p>
+            </Card.Feature>
           </Card>
         ))}
       </Card.Group>
