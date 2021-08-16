@@ -3,7 +3,6 @@ import { Header, Profiles } from "../components";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
 export function SelectProfileContainer({ user, setProfile }) {
-  console.log(user, "user");
   return (
     <>
       <Header bg={false}>
